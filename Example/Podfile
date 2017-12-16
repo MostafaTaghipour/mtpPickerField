@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'mtpPickerField_Example' do
+  pod 'mtpPickerField', :path => '../'
+
+  target 'mtpPickerField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
