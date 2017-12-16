@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mtpPickerField'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of mtpPickerField.'
+  s.version          = '1.0.0'
+  s.summary          = 'UITextField + ActionSheet + (UIPickerView, UIDatePicker, UITableView, UICollectionView)'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+mtpPickerField is a good component to choose from among several options.
+This custom control is made up of a UITextField combination  one of the UIPickerView, UIDatePicker, UItableView, UICollectionView controls that are built into a ActionSheet.
                        DESC
 
-  s.homepage         = 'https://github.com/mostafa.taghipour@ymail.com/mtpPickerField'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/MostafaTaghipour/mtpPickerField'
+  # s.screenshots     = 'https://github.com/MostafaTaghipour/mtpPickerField/blob/master/screenshots/1.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mostafa.taghipour@ymail.com' => 'mostafa.taghipour@ymail.com' }
-  s.source           = { :git => 'https://github.com/mostafa.taghipour@ymail.com/mtpPickerField.git', :tag => s.version.to_s }
+  s.author           = { 'Mostafa Taghipour' => 'mostafa.taghipour@ymail.com' }
+  s.source           = { :git => 'https://github.com/MostafaTaghipour/mtpPickerField.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'mtpPickerField/Classes/**/*'
   
