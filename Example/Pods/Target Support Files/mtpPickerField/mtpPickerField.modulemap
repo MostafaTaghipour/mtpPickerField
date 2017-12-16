@@ -1,0 +1,6 @@
+framework module mtpPickerField {
+  umbrella header "mtpPickerField-umbrella.h"
+
+  export *
+  module * { export * }
+}
