@@ -55,9 +55,9 @@ public class PickerField: UITextField ,UITextFieldDelegate{
     }
     public lazy var rightImageView : UIImageView = { [unowned self]  in
         
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 35, height: 30))
         
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 2.5, width: 25, height: 25))
+        let imageView = UIImageView(frame: CGRect(x: 5, y: 2.5, width: 25, height: 25))
         view.addSubview(imageView)
         self.rightView=view
         
