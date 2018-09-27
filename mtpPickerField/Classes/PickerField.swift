@@ -96,9 +96,9 @@ public class PickerField: UITextField ,UITextFieldDelegate{
             }
         }
     }
-    public var height:CGFloat=250{
+    public var fieldHeight:CGFloat=250{
         didSet{
-            heightConstraint?.constant=height
+            heightConstraint?.constant=fieldHeight
         }
     }
     public var hideButtons:Bool=false{
@@ -154,7 +154,7 @@ public class PickerField: UITextField ,UITextFieldDelegate{
         alert?.isModalInPopover = true
         
         
-        heightConstraint = NSLayoutConstraint(item: alert!.view, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: self.height)
+        heightConstraint = NSLayoutConstraint(item: alert!.view, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: self.fieldHeight)
         
         alert?.view.addConstraint(heightConstraint!)
         
@@ -397,3 +397,4 @@ public class PickerField: UITextField ,UITextFieldDelegate{
         }
     }
 }
+
