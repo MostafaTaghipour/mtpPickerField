@@ -150,11 +150,11 @@ public class PickerField: UITextField ,UITextFieldDelegate{
         }
         
         
-        alert = UIAlertController(title: nil, message: "", preferredStyle: UIAlertControllerStyle.actionSheet)
+        alert = UIAlertController(title: nil, message: "", preferredStyle: UIAlertController.Style.actionSheet)
         alert?.isModalInPopover = true
         
         
-        heightConstraint = NSLayoutConstraint(item: alert!.view, attribute: NSLayoutAttribute.height, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1, constant: self.fieldHeight)
+        heightConstraint = NSLayoutConstraint(item: alert!.view, attribute: NSLayoutConstraint.Attribute.height, relatedBy: NSLayoutConstraint.Relation.equal, toItem: nil, attribute: NSLayoutConstraint.Attribute.notAnAttribute, multiplier: 1, constant: self.fieldHeight)
         
         alert?.view.addConstraint(heightConstraint!)
         

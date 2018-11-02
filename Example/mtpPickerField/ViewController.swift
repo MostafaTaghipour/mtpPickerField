@@ -237,7 +237,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         tabelViewField.titleLabel?.text="select a country"
         tabelViewField.placeholder="your country ..."
         tabelViewField.hideButtons=true
-        tabelViewField.height=400
+        tabelViewField.fieldHeight=400
         tabelViewField.cancelWhenTouchUpOutside=true
         tabelViewField.rightImageView.image=#imageLiteral(resourceName: "arrow")
         tabelViewField.rightImageView.tintColor = .lightGray
@@ -282,7 +282,7 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource, UI
         let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
         layout.itemSize = CGSize(width: 70, height: 70)
-        layout.scrollDirection = UICollectionViewScrollDirection.vertical
+        layout.scrollDirection = UICollectionView.ScrollDirection.vertical
         collectionViewField.collectionView?.setCollectionViewLayout(layout, animated: true)
         collectionViewField.collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collectionViewField.collectionView?.dataSource=self
@@ -290,7 +290,7 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource, UI
         collectionViewField.titleLabel?.text="select a color"
         collectionViewField.placeholder="your favorite color ..."
         collectionViewField.hideButtons=true
-        collectionViewField.height=300
+        collectionViewField.fieldHeight=300
         collectionViewField.cancelWhenTouchUpOutside=true
         collectionViewField.rightImageView.image=#imageLiteral(resourceName: "arrow")
         collectionViewField.rightImageView.tintColor = .lightGray
