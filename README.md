@@ -9,7 +9,7 @@
 mtpPickerField is a good component to choose from among several options.
 This custom control is made up of a UITextField combination  one of the UIPickerView, UIDatePicker, UItableView, UICollectionView controls that are built into a ActionSheet
 
-![screen shots](/screenshots/1.gif)
+![screen shots](https://raw.githubusercontent.com/mostafataghipour/mtpPickerField/master/screenshots/1.gif)
 
 
 
