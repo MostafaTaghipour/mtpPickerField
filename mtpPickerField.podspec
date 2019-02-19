@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mtpPickerField'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'UITextField + ActionSheet + (UIPickerView, UIDatePicker, UITableView, UICollectionView)'
 
 # This description is used to generate tags and improve search results.
